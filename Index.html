@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PRIMECORE - Tecnología y componentes informáticos.">
+    <title>PRIMECORE | Tecnología</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <a href="#inicio" class="logo logo-header">
+            <img src="img/Logo.png" alt="PRIMECORE">
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+
+            <button id="loginAccess" class="login-access">
+                Iniciar sesión
+            </button>
+
+            <button id="adminAccess" class="admin-access" hidden>
+                Administración
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="eyebrow">TECNOLOGÍA · RENDIMIENTO · INNOVACIÓN</span>
+
+                <h1>La tecnología que impulsa tu <span>futuro.</span></h1>
+
+                <p>
+                    Descubre componentes informáticos y soluciones tecnológicas
+                    diseñadas para llevar tus equipos al siguiente nivel.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#catalogo" class="btn-primary">Explorar catálogo</a>
+                    <a href="#nosotros" class="btn-secondary">Conócenos</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
+
+                <div class="hero-logo">
+                    <img src="img/Logo.png" alt="Logotipo PRIMECORE">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats-section">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <strong>2012</strong>
+                <span>Año de creación</span>
+            </div>
+            <div class="stat-item">
+                <strong>10</strong>
+                <span>Categorías</span>
+            </div>
+            <div class="stat-item">
+                <strong>PC</strong>
+                <span>Especialización tecnológica</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="section catalog-section" id="catalogo">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">NUESTROS PRODUCTOS</span>
+                <h2>Catálogo <span>PRIMECORE</span></h2>
+                <p>Explora nuestros componentes y accesorios informáticos.</p>
+            </div>
+
+            <div class="catalog-controls">
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Buscar productos, marcas o modelos..."
+                >
+
+                <select id="categoryFilter">
+                    <option value="all">Todas las categorías</option>
+                </select>
+            </div>
+
+            <div class="category-list" id="categoryList"></div>
+
+            <div class="product-grid" id="productGrid"></div>
+        </div>
+    </section>
+
+    <!-- SOLUCIONES -->
+    <section class="section solutions-section" id="soluciones">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">QUÉ OFRECEMOS</span>
+                <h2>Soluciones <span>tecnológicas</span></h2>
+                <p>Componentes y accesorios para diferentes necesidades informáticas.</p>
+            </div>
+
+            <div class="solutions-grid">
+                <article class="solution-card">
+                    <div class="solution-icon">▦</div>
+                    <h3>Componentes</h3>
+                    <p>Procesadores, tarjetas gráficas, memorias y placas base.</p>
+                </article>
+
+                <article class="solution-card">
+                    <div class="solution-icon">⚙</div>
+                    <h3>Equipamiento</h3>
+                    <p>Almacenamiento, fuentes de alimentación y refrigeración.</p>
+                </article>
+
+                <article class="solution-card">
+                    <div class="solution-icon">⌨</div>
+                    <h3>Accesorios</h3>
+                    <p>Periféricos y cables para completar tu configuración.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section about-section" id="nosotros">
+        <div class="container about-content">
+            <div>
+                <span class="eyebrow">SOBRE PRIMECORE</span>
+                <h2>Tecnología con visión de <span>futuro.</span></h2>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    PRIMECORE SLS es un proyecto empresarial centrado en el
+                    sector tecnológico y los componentes informáticos.
+                </p>
+                <p>
+                    Desde su creación en 2012, su identidad se basa en la
+                    tecnología, la innovación y el desarrollo de soluciones
+                    para equipos informáticos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact-section" id="contacto">
+        <div class="container contact-content">
+            <div class="section-heading">
+                <span class="eyebrow">CONTACTO</span>
+                <h2>Conecta con <span>PRIMECORE</span></h2>
+                <p>Estamos aquí para ayudarte con tus necesidades tecnológicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMINISTRACIÓN -->
+    <section class="admin-panel" id="adminPanel">
+        <div class="container">
+
+            <div class="admin-header">
+                <div>
+                    <span class="eyebrow">GESTIÓN INTERNA</span>
+                    <h2>Panel de <span>administración</span></h2>
+                    <p>Gestiona los productos y el inventario de PRIMECORE.</p>
+                </div>
+
+                <div class="admin-header-actions">
+                    <button id="logoutAdmin" class="btn-secondary">
+                        Cerrar sesión
+                    </button>
+
+                    <button id="closeAdmin" class="btn-secondary">
+                        Cerrar panel
+                    </button>
+                </div>
+            </div>
+
+            <!-- ALMACENAMIENTO -->
+            <div class="storage-manager">
+                <div class="storage-info">
+                    <div class="storage-icon">📁</div>
+                    <div>
+                        <h3>Almacenamiento del proyecto</h3>
+                        <p id="storageStatus">Selecciona la carpeta PRIMECORE para comenzar.</p>
+                    </div>
+                </div>
+
+                <button type="button" id="selectProjectFolder" class="btn-primary">
+                    Seleccionar carpeta del proyecto
+                </button>
+            </div>
+
+            <!-- DASHBOARD -->
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <span>Total productos</span>
+                    <strong id="totalProducts">0</strong>
+                </div>
+
+                <div class="dashboard-card">
+                    <span>Disponibles</span>
+                    <strong id="availableProducts">0</strong>
+                </div>
+
+                <div class="dashboard-card">
+                    <span>Agotados</span>
+                    <strong id="outProducts">0</strong>
+                </div>
+
+                <div class="dashboard-card">
+                    <span>Unidades en stock</span>
+                    <strong id="totalStock">0</strong>
+                </div>
+            </div>
+
+            <div class="inventory-alert" id="inventoryAlert">
+                <strong>Estado del inventario</strong>
+                <p id="inventoryAlertText">Cargando inventario...</p>
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="admin-layout">
+
+                <div class="admin-form-card">
+                    <div class="form-heading">
+                        <h3 id="formTitle">Añadir producto</h3>
+                        <p>Introduce los datos del nuevo producto.</p>
+                    </div>
+
+                    <form id="productForm">
+                        <input type="hidden" id="productId">
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="productName">Nombre del producto *</label>
+                                <input type="text" id="productName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productBrand">Marca *</label>
+                                <input type="text" id="productBrand" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productCategory">Categoría *</label>
+                                <select id="productCategory" required></select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productModel">Modelo o referencia</label>
+                                <input type="text" id="productModel">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productPrice">Precio base (€) *</label>
+                                <input type="number" id="productPrice" min="0" step="0.01" required>
+
+                                <div class="price-preview">
+                                    <div>
+                                        <span>Mayorista (+55 %)</span>
+                                        <strong id="wholesalePreview">—</strong>
+                                    </div>
+                                    <div>
+                                        <span>Minorista (+75 %)</span>
+                                        <strong id="retailPreview">—</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productStock">Unidades en stock *</label>
+                                <input type="number" id="productStock" min="0" step="1" value="0" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="productStatus">Estado</label>
+                                <select id="productStatus">
+                                    <option value="Disponible">Disponible</option>
+                                    <option value="Agotado">Agotado</option>
+                                    <option value="Próximamente">Próximamente</option>
+                                </select>
+                            </div>
+
+                            <!-- IMAGEN DEL PRODUCTO -->
+                            <div class="form-group full-width">
+                                <label for="productImageUrl">URL de la imagen</label>
+                                <input
+                                    type="url"
+                                    id="productImageUrl"
+                                    placeholder="https://ejemplo.com/imagen-producto.jpg"
+                                    autocomplete="url"
+                                >
+                                <small>
+                                    Pega un enlace directo a la imagen. Debe comenzar por https:// o http://.
+                                </small>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productImageFile">O subir imagen desde el ordenador</label>
+                                <input type="file" id="productImageFile" accept="image/*">
+                                <small>
+                                    La imagen se guardará en la carpeta img/productos/.
+                                </small>
+
+                                <div id="imagePreview" class="image-preview"></div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productDescription">Descripción</label>
+                                <textarea id="productDescription" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="productSpecs">Características (una por línea)</label>
+                                <textarea id="productSpecs" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary" id="saveProduct">
+                                Añadir producto
+                            </button>
+
+                            <button type="button" class="btn-secondary" id="cancelEdit">
+                                Limpiar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- LISTADO ADMINISTRADOR -->
+                <div class="admin-list-card">
+                    <div class="admin-list-heading">
+                        <div>
+                            <h3>Inventario</h3>
+                            <span id="adminProductCount">0 productos</span>
+                        </div>
+
+                        <button type="button" id="newProductBtn" class="btn-secondary">
+                            + Nuevo producto
+                        </button>
+                    </div>
+
+                    <div id="adminProductList" class="admin-product-list"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- MODAL DE INICIO DE SESIÓN -->
+<div class="login-modal" id="loginModal" aria-hidden="true">
+    <div class="login-backdrop" id="loginBackdrop"></div>
+
+    <div class="login-box">
+        <button
+            type="button"
+            class="login-close"
+            id="loginClose"
+            aria-label="Cerrar"
+        >×</button>
+
+        <div class="login-icon">🔐</div>
+
+        <span class="eyebrow">ACCESO PRIVADO</span>
+
+        <h2>Administración</h2>
+
+        <p>
+            Introduce tu contraseña para acceder al panel de PRIMECORE.
+        </p>
+
+        <form id="loginForm">
+            <label for="adminPassword">Contraseña</label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Introduce tu contraseña"
+                autocomplete="current-password"
+                required
+            >
+
+            <p id="loginError" class="login-error" aria-live="polite"></p>
+
+            <button type="submit" class="btn-primary">
+                Acceder
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- MODAL DE PRODUCTO -->
+<div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <a href="#inicio" class="logo">PRIME<span>CORE</span></a>
+        <p>© 2026 PRIMECORE SLS. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+    </div>
+</footer>
+
+<script src="productos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
